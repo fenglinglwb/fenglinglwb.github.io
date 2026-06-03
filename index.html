@@ -202,6 +202,14 @@ const photos = [
 let currentSlide = 0;
 const stage = document.getElementById('carousel-stage');
 let autoplayTimer;
+const loadedImages = new Set();
+
+function preloadImage(idx) {
+  if (loadedImages.has(idx)) return;
+  const img = new window.Image();
+  img.src = photos[idx].src;
+  loadedImages.add(idx);
+}
 
 function getIndex(offset) {
   return (currentSlide + offset + photos.length) % photos.length;
@@ -218,22 +226,17 @@ function renderCarousel() {
 
   stage.innerHTML = positions.map(({ offset, pos }) => {
     const idx = getIndex(offset);
+    preloadImage(idx);
     const clickAction = offset === -1 ? 'moveCarousel(-1)' : offset === 1 ? 'moveCarousel(1)' : offset === -2 ? 'moveCarousel(-2)' : offset === 2 ? 'moveCarousel(2)' : '';
     return `
     <div class="carousel-slide ${pos}" ${clickAction ? `onclick="${clickAction}"` : ''}>
-      <img src="${photos[idx].src}" alt="${photos[idx].en}" loading="lazy">
+      <img src="${photos[idx].src}" alt="${photos[idx].en}">
       <div class="slide-caption"><span class="en">${photos[idx].en}</span></div>
     </div>`;
   }).join('');
 
-  // Preload adjacent images
-  [-3, 3].forEach(offset => {
-    const idx = getIndex(offset);
-    const link = document.createElement('link');
-    link.rel = 'prefetch';
-    link.href = photos[idx].src;
-    document.head.appendChild(link);
-  });
+  // Preload next few
+  [-3, 3, -4, 4].forEach(offset => preloadImage(getIndex(offset)));
 }
 
 function moveCarousel(dir) {
