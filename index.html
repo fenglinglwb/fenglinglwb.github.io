@@ -174,24 +174,29 @@ document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
 // Carousel - 3-slide view with circular navigation
 const photos = [
-  { src: './gallery/mountains-walk.jpg', cn: '那拉提', en: 'Nalati' },
-  { src: './gallery/glacier-lake.jpg', cn: '雨崩冰湖', en: 'Yubeng Glacier Lake' },
-  { src: './gallery/lake-boats.jpg', cn: '泸沽湖', en: 'Lugu Lake' },
-  { src: './gallery/sunset.jpg', cn: '香山', en: 'Fragrant Hills' },
-  { src: './gallery/hallstatt.jpg', cn: '哈尔施特塔湖', en: 'Hallstatt Lake' },
-  { src: './gallery/temple.jpg', cn: '芒市', en: 'Mangshi' },
-  { src: './gallery/forbidden-city.jpg', cn: '故宫', en: 'Forbidden City' },
-  { src: './gallery/europe-street.jpg', cn: '哈尔施特塔', en: 'Hallstatt' },
-  { src: './gallery/tunnel.jpg', cn: '金海湖隧道', en: 'Jinhai Lake Tunnel' },
-  { src: './gallery/capybaras.jpg', cn: '卡皮巴拉', en: 'Capybara' },
-  { src: './gallery/starry-night.jpg', cn: '巴特葛伊瑟恩', en: 'Bad Goisern' },
-  { src: './gallery/basketball.jpg', cn: '三亚', en: 'Sanya' },
-  { src: './gallery/colosseum.jpg', cn: '古罗马斗兽场', en: 'Colosseum' },
-  { src: './gallery/florence.jpg', cn: '佛罗伦萨', en: 'Florence' },
-  { src: './gallery/hongluo-temple.jpg', cn: '红螺寺', en: 'Hongluo Temple' },
-  { src: './gallery/san-diego.jpg', cn: '圣地亚哥', en: 'San Diego' },
-  { src: './gallery/aranya.jpg', cn: '秦皇岛阿那亚', en: 'Aranya, Qinhuangdao' },
-  { src: './gallery/changbai-mountain.jpg', cn: '长白山', en: 'Changbai Mountain' },
+  { src: './gallery/mountains-walk.jpg', en: 'Nalati' },
+  { src: './gallery/glacier-lake.jpg', en: 'Yubeng Glacier Lake' },
+  { src: './gallery/lake-boats.jpg', en: 'Lugu Lake' },
+  { src: './gallery/sunset.jpg', en: 'Fragrant Hills' },
+  { src: './gallery/hallstatt.jpg', en: 'Hallstatt Lake' },
+  { src: './gallery/temple.jpg', en: 'Mangshi' },
+  { src: './gallery/forbidden-city.jpg', en: 'Forbidden City' },
+  { src: './gallery/europe-street.jpg', en: 'Hallstatt' },
+  { src: './gallery/tunnel.jpg', en: 'Jinhai Lake Tunnel' },
+  { src: './gallery/capybaras.jpg', en: 'Capybara' },
+  { src: './gallery/starry-night.jpg', en: 'Bad Goisern' },
+  { src: './gallery/basketball.jpg', en: 'Sanya' },
+  { src: './gallery/colosseum.jpg', en: 'Colosseum' },
+  { src: './gallery/florence.jpg', en: 'Florence' },
+  { src: './gallery/hongluo-temple.jpg', en: 'Hongluo Temple' },
+  { src: './gallery/san-diego.jpg', en: 'San Diego' },
+  { src: './gallery/aranya.jpg', en: 'Aranya, Qinhuangdao' },
+  { src: './gallery/changbai-mountain.jpg', en: 'Changbai Mountain' },
+  { src: './gallery/shenzhen-qianhai.jpg', en: 'Qianhai, Shenzhen' },
+  { src: './gallery/huangshan.jpg', en: 'Huangshan' },
+  { src: './gallery/jiuzhaigou.jpg', en: 'Jiuzhaigou' },
+  { src: './gallery/saint-petersburg.jpg', en: 'Saint Petersburg' },
+  { src: './gallery/yangshuo.jpg', en: 'Yangshuo' },
 ];
 
 let currentSlide = 0;
@@ -216,10 +221,19 @@ function renderCarousel() {
     const clickAction = offset === -1 ? 'moveCarousel(-1)' : offset === 1 ? 'moveCarousel(1)' : offset === -2 ? 'moveCarousel(-2)' : offset === 2 ? 'moveCarousel(2)' : '';
     return `
     <div class="carousel-slide ${pos}" ${clickAction ? `onclick="${clickAction}"` : ''}>
-      <img src="${photos[idx].src}" alt="${photos[idx].cn}">
-      <div class="slide-caption"><span class="cn">${photos[idx].cn}</span><span class="en">${photos[idx].en}</span></div>
+      <img src="${photos[idx].src}" alt="${photos[idx].en}" loading="lazy">
+      <div class="slide-caption"><span class="en">${photos[idx].en}</span></div>
     </div>`;
   }).join('');
+
+  // Preload adjacent images
+  [-3, 3].forEach(offset => {
+    const idx = getIndex(offset);
+    const link = document.createElement('link');
+    link.rel = 'prefetch';
+    link.href = photos[idx].src;
+    document.head.appendChild(link);
+  });
 }
 
 function moveCarousel(dir) {
