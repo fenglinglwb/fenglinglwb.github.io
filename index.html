@@ -90,7 +90,7 @@
           <a class="gallery-item" href="javascript:void(0)"><img src="./gallery/yangshuo.jpg" alt="Yangshuo" loading="lazy"><span class="caption">Yangshuo</span></a>
         </div>
       </div>
-      <button class="gallery-toggle" id="gallery-toggle" onclick="document.getElementById('gallery-wrapper').classList.toggle('is-expanded'); this.textContent = this.textContent === 'View All' ? 'Collapse' : 'View All';">View All</button>
+      <button class="gallery-toggle" id="gallery-toggle" onclick="var w=document.getElementById('gallery-wrapper'); w.classList.toggle('is-expanded'); if(!w.classList.contains('is-expanded')){document.getElementById('gallery').scrollIntoView({behavior:'smooth'})} this.textContent = w.classList.contains('is-expanded') ? 'Collapse' : 'View All';">View All</button>
     </section>
 
     <!-- ABOUT -->
