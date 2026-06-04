@@ -3,254 +3,323 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wenbo LI - Homepage</title>
-  <meta name="description" content="Wenbo LI's personal homepage - Research Scientist exploring multimodal foundation models, World Models, and AIGC.">
+  <title>Wenbo LI</title>
+  <meta name="description" content="Wenbo LI — Research Scientist exploring multimodal foundation models, World Models, and AIGC.">
   <meta name="keywords" content="Wenbo Li, Research Scientist, Multimodal, World Models, AIGC, CUHK">
   <meta name="google-site-verification" content="X2QFrl-bPeg9AdlMt4VKT9v6MJUSTCf-SrY3CvKt4Zs">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📷</text></svg>">
 </head>
 <body>
 
-<!-- NAV -->
-<nav class="nav" id="nav">
-  <div class="nav-inner">
-    <div class="nav-left">
-      <div class="nav-brand">Wenbo LI</div>
-      <div class="nav-motto">Chasing curiosity by day, embracing life by default.</div>
-    </div>
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#news">News</a>
-      <a href="#projects">Projects</a>
-      <a href="#awards">Awards</a>
-    </div>
-  </div>
-</nav>
-
-<!-- PHOTOGRAPHY CAROUSEL -->
-<section class="photo-carousel" id="carousel">
-  <div class="carousel-stage" id="carousel-stage"></div>
-  <button class="carousel-btn carousel-btn-prev" onclick="moveCarousel(-1)">&#8249;</button>
-  <button class="carousel-btn carousel-btn-next" onclick="moveCarousel(1)">&#8250;</button>
-</section>
-
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-text">
-    <h1 class="hero-name">Wenbo LI<span class="hero-name-cn">李文博</span></h1>
-    <p class="hero-tagline">Exploring multimodal foundation models, World Models, and AIGC.</p>
-    <div class="hero-links">
-      <a href="mailto:fenglinglwb@gmail.com" class="hero-link">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-        Email
-      </a>
-      <a href="https://scholar.google.com/citations?user=foGn_TIAAAAJ&hl=en" class="hero-link" target="_blank">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/></svg>
-        Scholar
-      </a>
-      <a href="https://github.com/fenglinglwb" class="hero-link" target="_blank">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.092 24 16.592 24 12.297 24 5.67 18.627.3 12 .3z"/></svg>
-        GitHub
-      </a>
-    </div>
-  </div>
-  <div class="hero-photo">
-    <img src="./pic/WenboLI.png" alt="Wenbo LI">
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about" class="section fade-in">
-  <h2 class="section-title">About</h2>
-  <div class="about">
-    <p>I am a research scientist at Joy Future Academy, where I explore multimodal foundation models, World Models, and AIGC. Prior to this, I was part of the Huawei TopMinds program (天才少年).</p>
-    <p>I earned my Ph.D. in the CSE Department at the Chinese University of Hong Kong in 2023, supervised by <a href="https://jiaya.me/" class="link-dark">Prof. Jiaya Jia</a>. During the doctoral study, my first-author work <a href="https://github.com/fenglinglwb/MAT" class="link-dark">MAT</a> was selected as a <strong>CVPR 2022 Best Paper Finalist</strong>. I received my Master's degree in 2019 and Bachelor's degree from the IEEE Pilot Class in 2016 from Shanghai Jiao Tong University.</p>
-  </div>
-</section>
-
-<!-- NEWS -->
-<div class="section-alt" id="news">
-  <section class="section-inner fade-in">
-    <h2 class="section-title">News</h2>
-    <ul class="news-list">
-      <li class="news-item"><span class="news-dot"></span>One paper accepted at <strong>CVPR 2026</strong></li>
-      <li class="news-item"><span class="news-dot"></span>Three papers accepted at <strong>ICLR 2026</strong></li>
-      <li class="news-item"><span class="news-dot"></span>Five papers accepted at <strong>AAAI 2026</strong></li>
-    </ul>
-  </section>
+<!-- PRELOADER -->
+<div class="_prldr">
+  <div class="_prldr-txt">Wenbo LI<br><span style="font-size:24px;opacity:0.7;white-space:nowrap;">Chasing curiosity by day, embracing life by default.</span></div>
 </div>
 
-<!-- PROJECTS -->
-<section id="projects" class="section fade-in">
-  <h2 class="section-title">Open-Source Projects (11K+ Stars)</h2>
+<!-- PAGE WRAPPER -->
+<div class="pg-wrp">
 
-  <div class="projects-grid">
-    <div class="project-card">
-      <div class="project-card-title">Unified Multimodal Model</div>
-      <div class="project-card-items">
-        <span class="proj"><a href="https://github.com/jd-opensource/JoyAI-Image">JoyAI-Image</a></span>
-      </div>
-      <div class="project-card-desc">Understanding, generation, and editing with spatial intelligence.</div>
-    </div>
-
-    <div class="project-card">
-      <div class="project-card-title">Multimodal Agents</div>
-      <div class="project-card-items">
-        <span class="proj"><a href="https://jarvisevo.vercel.app/">JarvisEvo</a></span>
-        <span class="proj"><a href="https://jarvisart.vercel.app">JarvisArt</a></span>
-        <span class="proj"><a href="https://cvpr2025-jarvisir.github.io">JarvisIR</a></span>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="project-card-title">Image & Video Synthesis and Editing</div>
-      <div class="project-card-items">
-        <span class="proj"><a href="https://jshilong.github.io/flashvideo-page">FlashVideo</a></span>
-        <span class="proj"><a href="https://jingjingrenabc.github.io/ultrapixel">UltraPixel</a></span>
-        <span class="proj"><a href="https://pbihao.github.io/projects/controlnext/index.html">ControlNeXt</a></span>
-        <span class="proj"><a href="https://video-p2p.github.io/">Video-P2P</a></span>
-        <span class="proj"><a href="https://github.com/fenglinglwb/MAT">MAT</a></span>
-      </div>
-      <div class="project-card-desc">MAT: CVPR 2022 Best Paper Finalist</div>
-    </div>
-
-    <div class="project-card">
-      <div class="project-card-title">Image & Video Restoration</div>
-      <div class="project-card-items">
-        <span class="proj"><a href="https://github.com/csguoh/MambaIR">MambaIRv2</a></span>
-        <span class="proj"><a href="https://peylnog.github.io/ContinuousSR_web">ContinuousSR</a></span>
-        <span class="proj"><a href="https://coser-main.github.io">CoSeR</a></span>
-        <span class="proj"><a href="https://xinyu-andy.github.io/uhdm-page">UHDM</a></span>
-        <span class="proj"><a href="https://github.com/JIA-Lab-research/Simple-SR">SimpleSR</a></span>
-        <span class="proj"><a href="https://github.com/JIA-Lab-research/MASA-SR">MASA-SR</a></span>
-        <span class="proj"><a href="https://github.com/fenglinglwb/EDT">EDT</a></span>
-      </div>
-    </div>
-
+  <!-- NAV: fixed corners -->
+  <a href="#" class="nav-logo lnk-blr-hvr">Wenbo LI</a>
+  <div class="nav-links">
+    <a href="#gallery" class="lnk-blr-hvr">Gallery</a>
+    <a href="#about" class="lnk-blr-hvr">About</a>
+    <a href="#news" class="lnk-blr-hvr">News</a>
+    <a href="#projects" class="lnk-blr-hvr">Projects</a>
+    <a href="#awards" class="lnk-blr-hvr">Awards</a>
   </div>
-</section>
 
-<!-- AWARDS -->
-<div class="section-alt">
-  <section id="awards" class="section-inner fade-in">
-    <h2 class="section-title">Honors & Awards</h2>
-    <ul class="awards-list">
-      <li class="awards-item"><span class="awards-badge">Paper Award</span> CVPR 2022 Best Paper Finalist</li>
-      <li class="awards-item"><span class="awards-badge">Champion</span> MIPI 2025 Challenge on Deblurring for HVS/HybridEVS Camera</li>
-      <li class="awards-item"><span class="awards-badge">Champion</span> AIM 2019 Challenge on Video Extreme Super-Resolution</li>
-      <li class="awards-item"><span class="awards-badge">Champion</span> COCO 2018 Challenge on Keypoint Detection</li>
-      <li class="awards-item"><span class="awards-badge silver">Honor</span> Outstanding Graduate, SJTU</li>
-      <li class="awards-item"><span class="awards-badge silver">Scholarship</span> Academic Excellence Scholarship, SJTU</li>
-      <li class="awards-item"><span class="awards-badge silver">Scholarship</span> Wish Enterprise Scholarship</li>
-      <li class="awards-item"><span class="awards-badge silver">Scholarship</span> Fushou Li Enterprise Scholarship</li>
-    </ul>
-  </section>
-</div>
+  <!-- CONTENT -->
+  <div class="cnt-wrp">
 
-<!-- FOOTER -->
-<footer class="footer">
-  <p>&copy; 2026 Wenbo LI</p>
-  <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=wFmme877sPr9Bi-O6mxYxCQ5d5gLMou51e3Rf9vVPyQ&cl=ffffff&w=a"></script>
-</footer>
+    <!-- HERO -->
+    <section class="hero _trns-blr">
+      <h1 class="hero-name">
+        Wenbo LI
+        <span class="hero-name-cn">李文博</span>
+      </h1>
+      <p class="hero-tagline">Exploring multimodal foundation models, World Models, and AIGC.</p>
+      <div class="hero-links">
+        <a href="mailto:fenglinglwb@gmail.com" class="hero-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          Email
+        </a>
+        <a href="https://scholar.google.com/citations?user=foGn_TIAAAAJ&hl=en" class="hero-link" target="_blank">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/></svg>
+          Scholar
+        </a>
+        <a href="https://github.com/fenglinglwb" class="hero-link" target="_blank">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.092 24 16.592 24 12.297 24 5.67 18.627.3 12 .3z"/></svg>
+          GitHub
+        </a>
+      </div>
+      <div class="hero-photo">
+        <img src="./pic/WenboLI.png" alt="Wenbo LI">
+      </div>
+    </section>
 
-<!-- JS -->
+    <!-- GALLERY -->
+    <section class="gallery-section" id="gallery">
+      <h2 class="gallery-title _trns-blr">Gallery</h2>
+      <div class="gallery-grid" id="gallery-grid">
+        <a class="gallery-item" href="javascript:void(0)"><img src="./gallery/mountains-walk.jpg" alt="Nalati" loading="lazy"><span class="caption">Nalati</span></a>
+        <a class="gallery-item" href="javascript:void(0)"><img src="./gallery/glacier-lake.jpg" alt="Yubeng Glacier Lake" loading="lazy"><span class="caption">Yubeng Glacier Lake</span></a>
+        <a class="gallery-item" href="javascript:void(0)"><img src="./gallery/hallstatt.jpg" alt="Hallstatt" loading="lazy"><span class="caption">Hallstatt</span></a>
+        <a class="gallery-item" href="javascript:void(0)"><img src="./gallery/forbidden-city.jpg" alt="Forbidden City" loading="lazy"><span class="caption">Forbidden City</span></a>
+        <a class="gallery-item" href="javascript:void(0)"><img src="./gallery/starry-night.jpg" alt="Bad Goisern" loading="lazy"><span class="caption">Bad Goisern</span></a>
+        <a class="gallery-item" href="javascript:void(0)"><img src="./gallery/colosseum.jpg" alt="Colosseum" loading="lazy"><span class="caption">Colosseum</span></a>
+        <a class="gallery-item" href="javascript:void(0)"><img src="./gallery/florence.jpg" alt="Florence" loading="lazy"><span class="caption">Florence</span></a>
+        <a class="gallery-item" href="javascript:void(0)"><img src="./gallery/sunset.jpg" alt="Fragrant Hills" loading="lazy"><span class="caption">Fragrant Hills</span></a>
+        <a class="gallery-item" href="javascript:void(0)"><img src="./gallery/lake-boats.jpg" alt="Lugu Lake" loading="lazy"><span class="caption">Lugu Lake</span></a>
+        <a class="gallery-item" href="javascript:void(0)"><img src="./gallery/temple.jpg" alt="Mangshi" loading="lazy"><span class="caption">Mangshi</span></a>
+        <a class="gallery-item" href="javascript:void(0)"><img src="./gallery/tunnel.jpg" alt="Jinhai Lake Tunnel" loading="lazy"><span class="caption">Jinhai Lake Tunnel</span></a>
+        <a class="gallery-item" href="javascript:void(0)"><img src="./gallery/capybaras.jpg" alt="Capybara" loading="lazy"><span class="caption">Capybara</span></a>
+        <a class="gallery-item" href="javascript:void(0)"><img src="./gallery/basketball.jpg" alt="Sanya" loading="lazy"><span class="caption">Sanya</span></a>
+        <a class="gallery-item" href="javascript:void(0)"><img src="./gallery/hongluo-temple.jpg" alt="Hongluo Temple" loading="lazy"><span class="caption">Hongluo Temple</span></a>
+        <a class="gallery-item" href="javascript:void(0)"><img src="./gallery/san-diego.jpg" alt="San Diego" loading="lazy"><span class="caption">San Diego</span></a>
+        <a class="gallery-item" href="javascript:void(0)"><img src="./gallery/aranya.jpg" alt="Aranya, Qinhuangdao" loading="lazy"><span class="caption">Aranya</span></a>
+        <a class="gallery-item" href="javascript:void(0)"><img src="./gallery/changbai-mountain.jpg" alt="Changbai Mountain" loading="lazy"><span class="caption">Changbai Mountain</span></a>
+        <a class="gallery-item" href="javascript:void(0)"><img src="./gallery/shenzhen-qianhai.jpg" alt="Qianhai, Shenzhen" loading="lazy"><span class="caption">Qianhai, Shenzhen</span></a>
+        <a class="gallery-item" href="javascript:void(0)"><img src="./gallery/huangshan.jpg" alt="Huangshan" loading="lazy"><span class="caption">Huangshan</span></a>
+        <a class="gallery-item" href="javascript:void(0)"><img src="./gallery/jiuzhaigou.jpg" alt="Jiuzhaigou" loading="lazy"><span class="caption">Jiuzhaigou</span></a>
+        <a class="gallery-item" href="javascript:void(0)"><img src="./gallery/saint-petersburg.jpg" alt="Saint Petersburg" loading="lazy"><span class="caption">Saint Petersburg</span></a>
+        <a class="gallery-item" href="javascript:void(0)"><img src="./gallery/yangshuo.jpg" alt="Yangshuo" loading="lazy"><span class="caption">Yangshuo</span></a>
+      </div>
+      <button class="gallery-toggle" id="gallery-toggle" onclick="document.getElementById('gallery-grid').classList.toggle('is-expanded'); this.textContent = this.textContent === 'View All' ? 'Collapse' : 'View All';">View All</button>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <h2 class="section-title _trns-blr">About</h2>
+      <div class="about-content _trns-blr">
+        <p>I am a research scientist at Joy Future Academy, where I explore multimodal foundation models, World Models, and AIGC. Prior to this, I was part of the Huawei TopMinds program (天才少年).</p>
+        <p>I earned my Ph.D. in the CSE Department at the Chinese University of Hong Kong in 2023, supervised by <a href="https://jiaya.me/" target="_blank">Prof. Jiaya Jia</a>. During the doctoral study, my first-author work <a href="https://github.com/fenglinglwb/MAT" target="_blank">MAT</a> was selected as a <strong>CVPR 2022 Best Paper Finalist</strong>. I received my Master's degree in 2019 and Bachelor's degree from the IEEE Pilot Class in 2016 from Shanghai Jiao Tong University.</p>
+      </div>
+    </section>
+
+    <!-- NEWS -->
+    <section class="news-section" id="news">
+      <div class="section" style="padding-top:0;padding-bottom:0;">
+        <h2 class="section-title _trns-blr">News</h2>
+        <ul class="news-list _trns-blr">
+          <li class="news-item"><span class="news-dot"></span>One paper accepted at <strong>CVPR 2026</strong></li>
+          <li class="news-item"><span class="news-dot"></span>Three papers accepted at <strong>ICLR 2026</strong></li>
+          <li class="news-item"><span class="news-dot"></span>Five papers accepted at <strong>AAAI 2026</strong></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects-section" id="projects">
+      <h2 class="projects-view-title _trns-blr">Projects</h2>
+      <div class="projects-list _trns-blr">
+
+        <div class="prj-group">
+          <div class="prj-group-label">Unified Multimodal Model</div>
+          <a href="https://github.com/jd-opensource/JoyAI-Image" target="_blank" class="prj-lnk" data-img="./pic/projects/joyai.jpg">JoyAI-Image</a>
+        </div>
+
+        <div class="prj-group">
+          <div class="prj-group-label">Multimodal Agents</div>
+          <a href="https://jarvisevo.vercel.app/" target="_blank" class="prj-lnk" data-img="./pic/projects/jarvisevo.jpg">JarvisEvo</a>
+          <a href="https://jarvisart.vercel.app" target="_blank" class="prj-lnk" data-img="./pic/projects/jarvisart.jpg">JarvisArt</a>
+          <a href="https://cvpr2025-jarvisir.github.io" target="_blank" class="prj-lnk" data-img="./pic/projects/jarvisir.jpg">JarvisIR</a>
+        </div>
+
+        <div class="prj-group">
+          <div class="prj-group-label">Image & Video Synthesis</div>
+          <a href="https://jshilong.github.io/flashvideo-page" target="_blank" class="prj-lnk" data-img="./pic/projects/flashvideo.jpg">FlashVideo</a>
+          <a href="https://jingjingrenabc.github.io/ultrapixel" target="_blank" class="prj-lnk" data-img="./pic/projects/ultrapixel.jpg">UltraPixel</a>
+          <a href="https://pbihao.github.io/projects/controlnext/index.html" target="_blank" class="prj-lnk" data-img="./pic/projects/controlnext.jpg">ControlNeXt</a>
+          <a href="https://video-p2p.github.io/" target="_blank" class="prj-lnk" data-img="./pic/projects/video-p2p.jpg">Video-P2P</a>
+          <a href="https://github.com/fenglinglwb/MAT" target="_blank" class="prj-lnk" data-img="./pic/projects/mat.jpg">MAT</a>
+        </div>
+
+        <div class="prj-group">
+          <div class="prj-group-label">Image & Video Restoration</div>
+          <a href="https://github.com/csguoh/MambaIR" target="_blank" class="prj-lnk" data-img="./pic/projects/mamabir.jpg">MambaIRv2</a>
+          <a href="https://peylnog.github.io/ContinuousSR_web" target="_blank" class="prj-lnk" data-img="./pic/projects/continuoussr.jpg">ContinuousSR</a>
+          <a href="https://coser-main.github.io" target="_blank" class="prj-lnk" data-img="./pic/projects/coser.jpg">CoSeR</a>
+          <a href="https://xinyu-andy.github.io/uhdm-page" target="_blank" class="prj-lnk" data-img="./pic/projects/uhdm.jpg">UHDM</a>
+          <a href="https://github.com/JIA-Lab-research/Simple-SR" target="_blank" class="prj-lnk" data-img="./pic/projects/simplesr.jpg">SimpleSR</a>
+          <a href="https://github.com/JIA-Lab-research/MASA-SR" target="_blank" class="prj-lnk" data-img="./pic/projects/masa.jpg">MASA-SR</a>
+          <a href="https://github.com/fenglinglwb/EDT" target="_blank" class="prj-lnk" data-img="./pic/projects/edt.jpg">EDT</a>
+        </div>
+
+      </div>
+
+      <!-- Hover image container -->
+      <div class="prj-img" id="prj-hover-img">
+        <img src="" alt="">
+      </div>
+    </section>
+
+    <!-- AWARDS -->
+    <section class="awards-section" id="awards">
+      <div class="section" style="padding-top:0;padding-bottom:0;">
+        <h2 class="section-title _trns-blr">Honors & Awards</h2>
+        <ul class="awards-list _trns-blr">
+          <li class="awards-item"><span class="awards-badge">Paper Award</span> CVPR 2022 Best Paper Finalist</li>
+          <li class="awards-item"><span class="awards-badge">Champion</span> MIPI 2025 Challenge on Deblurring</li>
+          <li class="awards-item"><span class="awards-badge">Champion</span> AIM 2019 Challenge on Video Extreme Super-Resolution</li>
+          <li class="awards-item"><span class="awards-badge">Champion</span> COCO 2018 Challenge on Keypoint Detection</li>
+          <li class="awards-item"><span class="awards-badge silver">Honor</span> Outstanding Graduate, SJTU</li>
+          <li class="awards-item"><span class="awards-badge silver">Scholarship</span> Academic Excellence Scholarship, SJTU</li>
+          <li class="awards-item"><span class="awards-badge silver">Scholarship</span> Wish Enterprise Scholarship</li>
+          <li class="awards-item"><span class="awards-badge silver">Scholarship</span> Fushou Li Enterprise Scholarship</li>
+        </ul>
+      </div>
+    </section>
+
+  </div><!-- /cnt-wrp -->
+
+  <!-- FOOTER (fixed corners) -->
+  <div class="ftr-left _trns-blr">Research Scientist</div>
+  <div class="ftr-right _trns-blr"><a href="mailto:fenglinglwb@gmail.com" class="lnk-blr-hvr">Email Me</a></div>
+
+</div><!-- /pg-wrp -->
+
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.2.2/lib/anime.min.js"></script>
 <script>
-// Nav shadow on scroll
-const nav = document.getElementById('nav');
-window.addEventListener('scroll', () => {
-  nav.classList.toggle('scrolled', window.scrollY > 10);
-});
+(function() {
+  'use strict';
 
-// Fade-in on scroll
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    }
+  // ── LENIS SMOOTH SCROLL ──
+  const lenis = new Lenis();
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+  requestAnimationFrame(raf);
+
+  // ── PRELOADER ──
+  const prldr = document.querySelector('._prldr');
+  const prldrTxt = document.querySelector('._prldr-txt');
+  const pgWrp = document.querySelector('.pg-wrp');
+  const cntWrp = document.querySelector('.cnt-wrp');
+  const TD = 600;
+
+  if (prldr) {
+    const tl = anime.timeline({});
+
+    // Show text
+    tl.add({
+      targets: prldrTxt,
+      opacity: [0, 1],
+      filter: ['blur(10px)', 'blur(0px)'],
+      translateY: ['20px', '0'],
+      easing: 'easeOutCubic',
+      duration: TD,
+      delay: 400,
+    });
+
+    // Hide text
+    tl.add({
+      targets: prldrTxt,
+      opacity: [1, 0],
+      filter: ['blur(0px)', 'blur(10px)'],
+      translateY: ['0', '-20px'],
+      easing: 'easeInCubic',
+      duration: TD,
+      complete: function() {
+        document.documentElement.style.backgroundColor = '#fff';
+        pgWrp.style.opacity = '1';
+
+        anime({
+          targets: prldr,
+          opacity: [1, 0],
+          easing: 'easeOutCubic',
+          duration: 300,
+          delay: 100,
+          complete: function() { prldr.remove(); }
+        });
+
+        anime({
+          targets: cntWrp,
+          opacity: [0, 1],
+          filter: ['blur(10px)', 'blur(0px)'],
+          translateY: ['20px', '0px'],
+          easing: 'easeOutCubic',
+          duration: TD,
+          delay: 200,
+          complete: function() {
+            cntWrp.style.transform = '';
+            cntWrp.style.filter = '';
+            cntWrp.style.opacity = '';
+          }
+        });
+      }
+    }, '+=1500');
+  }
+
+  // ── SCROLL REVEAL ──
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+  document.querySelectorAll('._trns-blr').forEach(el => {
+    revealObserver.observe(el);
   });
-}, { threshold: 0.1 });
-document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-// Carousel - 3-slide view with circular navigation
-const photos = [
-  { src: './gallery/mountains-walk.jpg', en: 'Nalati' },
-  { src: './gallery/glacier-lake.jpg', en: 'Yubeng Glacier Lake' },
-  { src: './gallery/lake-boats.jpg', en: 'Lugu Lake' },
-  { src: './gallery/sunset.jpg', en: 'Fragrant Hills' },
-  { src: './gallery/hallstatt.jpg', en: 'Hallstatt Lake' },
-  { src: './gallery/temple.jpg', en: 'Mangshi' },
-  { src: './gallery/forbidden-city.jpg', en: 'Forbidden City' },
-  { src: './gallery/tunnel.jpg', en: 'Jinhai Lake Tunnel' },
-  { src: './gallery/capybaras.jpg', en: 'Capybara' },
-  { src: './gallery/starry-night.jpg', en: 'Bad Goisern' },
-  { src: './gallery/basketball.jpg', en: 'Sanya' },
-  { src: './gallery/colosseum.jpg', en: 'Colosseum' },
-  { src: './gallery/florence.jpg', en: 'Florence' },
-  { src: './gallery/hongluo-temple.jpg', en: 'Hongluo Temple' },
-  { src: './gallery/san-diego.jpg', en: 'San Diego' },
-  { src: './gallery/aranya.jpg', en: 'Aranya, Qinhuangdao' },
-  { src: './gallery/changbai-mountain.jpg', en: 'Changbai Mountain' },
-  { src: './gallery/shenzhen-qianhai.jpg', en: 'Qianhai, Shenzhen' },
-  { src: './gallery/huangshan.jpg', en: 'Huangshan' },
-  { src: './gallery/jiuzhaigou.jpg', en: 'Jiuzhaigou' },
-  { src: './gallery/saint-petersburg.jpg', en: 'Saint Petersburg' },
-  { src: './gallery/yangshuo.jpg', en: 'Yangshuo' },
-];
+  // ── GALLERY HOVER ──
+  const galleryGrid = document.getElementById('gallery-grid');
+  if (galleryGrid) {
+    galleryGrid.addEventListener('mouseenter', function(e) {
+      const item = e.target.closest('.gallery-item');
+      if (!item) return;
+      galleryGrid.classList.add('has-hover');
+      document.querySelectorAll('.gallery-item').forEach(el => {
+        if (el !== item) el.classList.add('is-inactive');
+        else el.classList.remove('is-inactive');
+      });
+    }, true);
 
-let currentSlide = 0;
-const stage = document.getElementById('carousel-stage');
-let autoplayTimer;
-const loadedImages = new Set();
+    galleryGrid.addEventListener('mouseleave', function(e) {
+      const item = e.target.closest('.gallery-item');
+      if (!item) return;
+      galleryGrid.classList.remove('has-hover');
+      document.querySelectorAll('.gallery-item').forEach(el => {
+        el.classList.remove('is-inactive');
+      });
+    }, true);
+  }
 
-function preloadImage(idx) {
-  if (loadedImages.has(idx)) return;
-  const img = new window.Image();
-  img.src = photos[idx].src;
-  loadedImages.add(idx);
-}
+  // ── PROJECT HOVER (emele-style) ──
+  const prjLinks = document.querySelectorAll('.prj-lnk');
+  const prjHoverImg = document.getElementById('prj-hover-img');
+  const prjHoverImgEl = prjHoverImg ? prjHoverImg.querySelector('img') : null;
 
-function getIndex(offset) {
-  return (currentSlide + offset + photos.length) % photos.length;
-}
+  if (prjLinks.length && prjHoverImg && window.matchMedia('(min-width: 768px)').matches) {
+    prjLinks.forEach(link => {
+      link.addEventListener('mouseenter', function() {
+        // Blur all others
+        prjLinks.forEach(l => {
+          if (l !== link) l.classList.add('is-blurred');
+        });
+        // Show image
+        const imgSrc = link.getAttribute('data-img');
+        if (imgSrc && prjHoverImgEl) {
+          prjHoverImgEl.src = imgSrc;
+          prjHoverImg.classList.add('is-active');
+        }
+      });
 
-function renderCarousel() {
-  const positions = [
-    { offset: -2, pos: 'far-left' },
-    { offset: -1, pos: 'left' },
-    { offset: 0, pos: 'center' },
-    { offset: 1, pos: 'right' },
-    { offset: 2, pos: 'far-right' },
-  ];
+      link.addEventListener('mouseleave', function() {
+        prjLinks.forEach(l => l.classList.remove('is-blurred'));
+        prjHoverImg.classList.remove('is-active');
+      });
+    });
+  }
 
-  stage.innerHTML = positions.map(({ offset, pos }) => {
-    const idx = getIndex(offset);
-    preloadImage(idx);
-    const clickAction = offset === -1 ? 'moveCarousel(-1)' : offset === 1 ? 'moveCarousel(1)' : offset === -2 ? 'moveCarousel(-2)' : offset === 2 ? 'moveCarousel(2)' : '';
-    return `
-    <div class="carousel-slide ${pos}" ${clickAction ? `onclick="${clickAction}"` : ''}>
-      <img src="${photos[idx].src}" alt="${photos[idx].en}">
-      <div class="slide-caption"><span class="en">${photos[idx].en}</span></div>
-    </div>`;
-  }).join('');
-
-  // Preload next few
-  [-3, 3, -4, 4].forEach(offset => preloadImage(getIndex(offset)));
-}
-
-function moveCarousel(dir) {
-  currentSlide = getIndex(dir);
-  renderCarousel();
-  resetAutoplay();
-}
-
-function resetAutoplay() {
-  clearInterval(autoplayTimer);
-  autoplayTimer = setInterval(() => moveCarousel(1), 5000);
-}
-
-renderCarousel();
-resetAutoplay();
+})();
 </script>
 
 <!-- Google Analytics -->
@@ -262,6 +331,9 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', 'UA-159069803-1', 'auto');
 ga('send', 'pageview');
 </script>
+
+<!-- ClusterMaps -->
+<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=wFmme877sPr9Bi-O6mxYxCQ5d5gLMou51e3Rf9vVPyQ&cl=ffffff&w=a"></script>
 
 </body>
 </html>
